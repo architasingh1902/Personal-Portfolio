@@ -1,0 +1,184 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+  }
+
+
+body {
+    background: #080808;
+    color: #fff; 
+}
+
+#header
+{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    margin: 0 23px; 
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    font-family:  Roboto Mono,monospace;
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background:linear-gradient(to right, #02f76c, #03bff9);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transform: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+.header-text{
+    margin-top: 9%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.typewriter  {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid orange; The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.0s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+.header-text h1 span{
+    background-clip: text;
+    color: transparent;
+    font-size: 85px;
+    background-image: linear-gradient(to right, #02f76c, #03bff9);
+}
+
+
+
+
+.moreabout{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px;
+    margin-right: 320px;
+}
+.buttons{
+
+/* margin-left: 60px; */
+
+}
+
+.buttons button{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: inline-block;
+    border: 2px solid black;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 18px;
+  color:black;
+  background:linear-gradient(to right, #02f76c, #03bff9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .buttons button:hover {
+    background-image: linear-gradient(to right, #029d58, #0383c7);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  } 
+
+.devPic img{
+    align-items: right;
+    height:58vh;
+    max-width: 100%; 
+  display: block; 
+
+} 
+
+
+/* END */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  /* @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

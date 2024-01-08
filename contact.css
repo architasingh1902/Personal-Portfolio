@@ -1,0 +1,155 @@
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+  }
+
+
+body {
+    background: #080808;
+    color: #fff; 
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    margin: 0 23px; 
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    font-family:  Roboto Mono,monospace;
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background:linear-gradient(to right, #02f76c, #03bff9);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transform: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*nav end*/
+
+
+   .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 30px;
+  }
+  
+  .social-links a {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 24px;
+  }  
+  
+  .instagram {
+    color: white;
+  }
+  
+  .github {
+    color: white;
+  }
+  
+  .linkedin {
+    color: white;
+  }
+  
+  .contact {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contactform h1{
+    margin-bottom: 10px;
+}
+.contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactform form div input {
+    width: 20vw;
+    border-radius: 10px;
+    margin: 6px 0;
+    padding: 5px;
+}
+
+#message {
+    width: 20vw;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 6px 0; 
+    height: 100px;
+    display: flex;
+}
+
+.buttons{
+  align-items: center;
+}
+.buttons button{
+    margin-top: 50px;
+    display: inline-block;
+    border: 2px solid black;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 18px;
+  color:black;
+  background:linear-gradient(to right, #02f76c, #03bff9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .buttons button:hover {
+    background-image: linear-gradient(to right, #029d58, #0383c7);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  } 
